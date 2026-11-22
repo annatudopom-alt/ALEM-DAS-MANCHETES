@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Além das Manchetes: aprenda a identificar desinformação, analisar fontes e desenvolver pensamento crítico.">
+  <meta name="theme-color" content="#0d1117">
+  <title>Além das Manchetes</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <a class="brand" href="./index.html#inicio"><img src="./logo.png" alt="" onerror="this.style.display='none'"><span>Além das Manchetes</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+    <nav id="mainNav" class="main-nav">
+      <a href="#verificador">Verificador</a><a href="#oque-e">O que é</a><a href="#contexto">História</a><a href="#impacto">Impacto</a><a href="#pesquisa">Dados</a><a href="#exemplos">Casos</a><a href="#identificar">Como identificar</a><a href="#apoio">Apoio</a>
+      <a class="nav-pill" href="./quiz.html">Quiz</a><a class="nav-primary" href="./ebook.html">E-book</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero section-dark" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow-pill">Projeto Científico Educacional 2026</span>
+          <h1>Além das <span class="blue-text">Manchetes</span></h1>
+          <p class="hero-lead">Nem tudo que viraliza é verdade. Aprenda a reconhecer a desinformação, investigar fontes e desenvolver um olhar crítico sobre o que você consome e compartilha.</p>
+          <div class="button-row"><a class="button button-primary" href="#verificador">Verificar conteúdo <span>→</span></a><a class="button button-outline" href="./quiz.html">Testar meu conhecimento</a></div>
+          <div class="hero-note"><span class="pulse-dot"></span> Informação consciente começa com uma pergunta.</div>
+        </div>
+        <div class="hero-visual">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="news-card">
+            <div class="news-card-top"><span class="live-dot"></span> ANÁLISE DE INFORMAÇÃO <span class="tiny-label">01 / 03</span></div>
+            <div class="news-symbol">!</div>
+            <h2>Antes de compartilhar, investigue.</h2>
+            <p>Uma manchete impactante não é garantia de informação verdadeira.</p>
+            <div class="scan-line"><span></span></div>
+            <div class="news-card-bottom"><span>FONTE</span><span>CONTEXTO</span><span>EVIDÊNCIA</span></div>
+          </div>
+          <div class="floating-tag tag-top">Pense criticamente</div><div class="floating-tag tag-bottom">Cheque antes de compartilhar</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-light" id="verificador">
+      <div class="container">
+        <div class="section-heading"><span class="section-kicker">FERRAMENTA INTERATIVA</span><h2>Verificador de <span class="blue-text">manchetes</span></h2><p>Insira uma frase ou manchete para identificar sinais comuns de conteúdo sensacionalista ou potencialmente enganoso.</p></div>
+        <div class="verifier-panel">
+          <form id="verifyForm">
+            <label for="verifyInput">Cole ou escreva a manchete que deseja analisar</label>
+            <textarea id="verifyInput" rows="4" placeholder="Ex.: URGENTE!! Cientistas descobriram uma cura milagrosa..." required></textarea>
+            <div class="form-footer"><small>A análise é educativa e identifica padrões de linguagem. Não confirma se uma notícia é verdadeira.</small><button class="button button-primary" id="verifyButton" type="submit">Analisar manchete →</button></div>
+          </form>
+          <div id="verifyResult" class="result-panel" aria-live="polite" hidden></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-dark" id="oque-e">
+      <div class="container two-column">
+        <div><span class="section-kicker">ENTENDA O FENÔMENO</span><h2>O que é <span class="blue-text">desinformação?</span></h2><p class="body-large">É a divulgação de informações falsas, imprecisas ou retiradas de contexto, muitas vezes com a intenção de confundir, manipular opiniões ou provocar reações.</p><p class="muted-copy">Ela pode aparecer em textos, imagens, vídeos, áudios e até em conteúdos que parecem ter sido produzidos por fontes confiáveis.</p></div>
+        <div class="feature-stack">
+          <article class="feature-card"><span class="feature-number">01</span><div><h3>Observe a manchete</h3><p>Títulos exagerados e apelos emocionais podem tentar provocar uma reação imediata.</p></div></article>
+          <article class="feature-card"><span class="feature-number">02</span><div><h3>Investigue a origem</h3><p>Procure quem publicou, quando publicou e quais fontes sustentam a informação.</p></div></article>
+          <article class="feature-card"><span class="feature-number">03</span><div><h3>Busque confirmação</h3><p>Compare a informação com veículos confiáveis e fontes oficiais ou especializadas.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-light" id="contexto">
+      <div class="container">
+        <div class="section-heading"><span class="section-kicker">CONTEXTO HISTÓRICO</span><h2>A desinformação ao longo <span class="blue-text">do tempo</span></h2><p>Os meios mudam, mas o uso de boatos para influenciar a opinião pública acompanha a história.</p></div>
+        <div class="timeline">
+          <article><span>Séc. XVII</span><div><h3>Panfletos de guerra</h3><p>Durante conflitos europeus, panfletos com informações falsas eram distribuídos para desmoralizar o inimigo e manipular a opinião pública.</p></div></article>
+          <article><span>1938</span><div><h3>A Guerra dos Mundos</h3><p>A transmissão radiofônica de Orson Welles foi confundida por parte do público com notícias reais sobre uma invasão marciana, demonstrando o poder da mídia sobre a percepção da realidade.</p></div></article>
+          <article><span>Década de 1990</span><div><h3>A era das correntes</h3><p>O e-mail popularizou mensagens em massa sobre doenças, conspirações e alertas que circulavam sem verificação.</p></div></article>
+          <article><span>2016</span><div><h3>Eleições e desinformação</h3><p>As eleições americanas expuseram o uso sistemático de fake news em redes sociais e levaram ao debate sobre o caso Cambridge Analytica.</p></div></article>
+          <article><span>2024 em diante</span><div><h3>Era da IA generativa</h3><p>Ferramentas de inteligência artificial permitem criar vídeos, áudios e imagens falsas convincentes em pouco tempo.</p></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="section-dark" id="impacto">
+      <div class="container">
+        <div class="section-heading"><span class="section-kicker">CONSEQUÊNCIAS</span><h2>O impacto da desinformação</h2><p>Informações falsas podem afetar diferentes áreas da sociedade.</p></div>
+        <div class="impact-grid">
+          <article class="feature-card"><div><h3>Saúde pública</h3><p>Boatos sobre vacinas e tratamentos podem levar pessoas a decisões prejudiciais e dificultar ações de saúde.</p></div></article>
+          <article class="feature-card"><div><h3>Democracia</h3><p>Notícias falsas sobre candidatos, partidos e eleições podem reduzir a confiança nas instituições.</p></div></article>
+          <article class="feature-card"><div><h3>Violência</h3><p>Boatos sobre crimes ou ameaças podem provocar acusações injustas e colocar pessoas em risco.</p></div></article>
+          <article class="feature-card"><div><h3>Economia</h3><p>Informações falsas sobre empresas e produtos podem gerar prejuízos e desconfiança no mercado.</p></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="section-light" id="pesquisa">
+      <div class="container">
+        <div class="section-heading"><span class="section-kicker">O IMPACTO DA DESINFORMAÇÃO</span><h2>Por que precisamos <span class="blue-text">verificar?</span></h2><p>Informações falsas podem afetar decisões individuais, debates públicos e a confiança nas instituições.</p></div>
+        <div class="stats-grid">
+          <article class="stat-card"><strong>70%</strong><span>dos jovens brasileiros já compartilharam notícias falsas sem verificar a fonte (Avaaz, 2021)</span></article>
+          <article class="stat-card"><strong>3×</strong><span>mais rápido se espalham as fake news em relação às notícias verdadeiras (MIT, 2018)</span></article>
+          <article class="stat-card"><strong>86%</strong><span>dos brasileiros têm dificuldade de identificar desinformação online (Reuters Institute, 2022)</span></article>
+          <article class="stat-card"><strong>R$ 2bi</strong><span>custo anual estimado da desinformação para a economia brasileira</span></article>
+        </div>
+        <p class="source-note">Dados e referências reproduzidos do conteúdo original do projeto. Verifique os estudos e seus contextos antes de utilizar os números em trabalhos ou publicações.</p>
+      </div>
+    </section>
+
+    <section class="section-dark" id="exemplos">
+      <div class="container">
+        <div class="section-heading"><span class="section-kicker">APRENDENDO COM A HISTÓRIA</span><h2>Casos que mostram o poder <span class="blue-text">dos boatos</span></h2><p>Conheça episódios em que rumores, manipulação e informações falsas tiveram consequências reais.</p></div>
+        <div class="case-grid case-grid-stacked" id="caseCards">
+          <article class="case-card"><span class="case-year">SAÚDE · EXEMPLO FALSO</span><h3>“Urgente: Água com limão cura nova variante de vírus em 2 dias!”</h3><p>Especialistas alertam que não existe comprovação científica de que água com limão previna ou cure infecções virais. O tratamento deve ser orientado por profissionais de saúde.</p></article>
+          <article class="case-card"><span class="case-year">POLÍTICA · EXEMPLO FALSO</span><h3>“Vídeo vazado mostra fraude nas urnas durante apuração no interior.”</h3><p>O vídeo divulgado é antigo e mostra um teste de rotina realizado dias antes da eleição oficial, sendo utilizado fora de contexto para gerar desconfiança.</p></article>
+          <article class="case-card"><span class="case-year">TECNOLOGIA · EXEMPLO FALSO</span><h3>“5G causa COVID-19 — torres de celular espalhando vírus artificialmente.”</h3><p>Teoria conspiratória sem base científica. A COVID-19 é causada por um vírus e não pode ser transmitida por ondas de rádio.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-dark" id="identificar">
+      <div class="container">
+        <div class="section-heading"><span class="section-kicker">PASSO A PASSO</span><h2>Como identificar uma notícia <span class="blue-text">falsa?</span></h2><p>Adote hábitos simples antes de acreditar ou compartilhar qualquer informação.</p></div>
+        <div class="identify-grid">
+          <article><b>01</b><h3>Verifique a fonte original</h3><p>Não confie apenas no título. Descubra qual site publicou e se é um veículo jornalístico reconhecido.</p></article>
+          <article><b>02</b><h3>Cheque a data</h3><p>Notícias antigas podem ser compartilhadas como se fossem atuais para provocar medo ou indignação.</p></article>
+          <article><b>03</b><h3>Desconfie do sensacionalismo</h3><p>Maiúsculas, pontuação excessiva e apelos emocionais pedem atenção redobrada.</p></article>
+          <article><b>04</b><h3>Busque outras fontes</h3><p>Pesquise o mesmo assunto em veículos confiáveis e fontes oficiais.</p></article>
+          <article><b>05</b><h3>Observe seu viés de confirmação</h3><p>Questione também as informações que parecem confirmar suas próprias opiniões.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section-light" id="apoio">
+      <div class="container two-column support-layout">
+        <div><span class="section-kicker">FONTES PARA CONSULTAR</span><h2>Não fique só na <span class="blue-text">manchete.</span></h2><p>Quando uma informação parecer duvidosa, procure fontes especializadas e organizações de checagem.</p></div>
+        <div class="resource-list">
+          <a href="https://www.gov.br/saude/pt-br" target="_blank" rel="noopener noreferrer"><span>Ministério da Saúde</span><b>↗</b></a>
+          <a href="https://www.fiocruz.br/" target="_blank" rel="noopener noreferrer"><span>Fiocruz</span><b>↗</b></a>
+          <a href="https://www.aosfatos.org/" target="_blank" rel="noopener noreferrer"><span>Aos Fatos</span><b>↗</b></a>
+          <a href="https://www.agencialupa.org/" target="_blank" rel="noopener noreferrer"><span>Agência Lupa</span><b>↗</b></a>
+          <a href="https://www.tse.jus.br/" target="_blank" rel="noopener noreferrer"><span>Tribunal Superior Eleitoral</span><b>↗</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-light simulator-section" id="simulador">
+      <div class="container">
+        <div class="section-heading"><span class="section-kicker">DESINFORMAÇÃO NA PRÁTICA</span><h2>Como fake news manipulam <span class="blue-text">emoções?</span></h2><p>Escolha um tema e descubra técnicas comuns usadas em mensagens enganosas.</p></div>
+        <div class="topic-buttons"><button data-topic="Saúde">Saúde</button><button data-topic="Política">Política</button><button data-topic="Tecnologia">Tecnologia</button></div>
+        <div id="simulatorResult" class="simulator-result" hidden></div>
+      </div>
+    </section>
+
+    <section class="section-dark home-quiz" id="quiz">
+      <div class="container narrow">
+        <div class="section-heading"><span class="section-kicker">DESAFIO RÁPIDO</span><h2>Você consegue identificar uma <span class="blue-text">fake news?</span></h2><p>Responda cinco afirmações e veja seu resultado.</p></div>
+        <div id="homeQuiz" class="quiz-panel"></div>
+        <div class="center-actions"><a class="button button-outline" href="./quiz.html">Acessar quiz completo (10 perguntas) →</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><div><a class="brand footer-brand" href="#inicio"><img src="./logo.png" alt=""><span>Além das Manchetes</span></a><p>Investigando como a desinformação influencia opiniões e comportamentos.</p></div><span>© 2026 — Projeto Científico Educacional</span></div></footer>
+  <script src="./js/data.js"></script><script src="./js/app.js"></script>
+</body>
+</html>
